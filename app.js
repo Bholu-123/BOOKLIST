@@ -1,4 +1,4 @@
-//using ES6 classes
+// Simple front-end auth + books wired to backend APIs
 //book class
 class Book{
     constructor(title,author,isbn){
