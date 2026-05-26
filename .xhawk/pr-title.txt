@@ -1,0 +1,1 @@
+Add Node.js+MongoDB backend with JWT auth and integrate frontend

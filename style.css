@@ -13,6 +13,14 @@ body {
     font-weight: 400;
 }
 
+.hidden { display: none; }
+
+.auth-toggle { margin: 1rem 0; }
+.auth-toggle button { margin-right: 0.5rem; }
+
+.app-header { display: flex; justify-content: space-between; align-items: center; }
+.user-controls { display: flex; align-items: center; gap: 1rem; }
+
 .container{
    margin: auto;
    width: 60%;

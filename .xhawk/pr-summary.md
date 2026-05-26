@@ -1,0 +1,5 @@
+- Introduced Express server with MongoDB connection and static serving
+- Added User and Book Mongoose models, JWT auth middleware, and routes for signup/login and book list/create
+- Updated index.html to include auth (login/signup) UI and gated app section with logout
+- Implemented frontend JS to call backend APIs, store token in localStorage, and render books
+- Provided .env.example and npm scripts for start/dev
