@@ -1,0 +1,5 @@
+- Added Node/Express backend with Mongoose models (User, Book), JWT auth middleware, and routes for auth and books
+- Implemented /api/auth/signup, /api/auth/login, and protected /api/books (GET, POST)
+- Created DB connection helper and server bootstrap with CORS and JSON middleware
+- Updated index.html to include login/signup UI and toggle to books section; added logout
+- Rewrote app.js to handle auth flow, store JWT in localStorage, and call backend to list/create books

@@ -8,9 +8,52 @@
   <title>Book List</title>
 </head>
 <body>
-  <div class="container">
-        <h1>Add Book</h1>
-        <form id="book-form">
+  <div id="auth-section" class="container">
+    <h1>Welcome to Booklist</h1>
+    <div id="auth-error" class="auth-error"></div>
+    <form id="login-form">
+      <h2>Login</h2>
+      <div class="email">
+        <label for="login-email">Email</label>
+        <input type="email" id="login-email" class="u-full-width" required>
+      </div>
+      <div class="password">
+        <label for="login-password">Password</label>
+        <input type="password" id="login-password" class="u-full-width" required>
+      </div>
+      <div>
+        <input type="submit" value="Login" class="u-full-width">
+      </div>
+      <p>Don't have an account? <a href="#" id="show-signup">Sign up</a></p>
+    </form>
+
+    <form id="signup-form" style="display:none">
+      <h2>Sign Up</h2>
+      <div class="name">
+        <label for="signup-name">Name</label>
+        <input type="text" id="signup-name" class="u-full-width">
+      </div>
+      <div class="email">
+        <label for="signup-email">Email</label>
+        <input type="email" id="signup-email" class="u-full-width" required>
+      </div>
+      <div class="password">
+        <label for="signup-password">Password</label>
+        <input type="password" id="signup-password" class="u-full-width" required>
+      </div>
+      <div>
+        <input type="submit" value="Create account" class="u-full-width">
+      </div>
+      <p>Already have an account? <a href="#" id="show-login">Log in</a></p>
+    </form>
+  </div>
+
+  <div id="books-section" class="container" style="display:none">
+    <div style="display:flex; align-items:center; justify-content:space-between">
+      <h1>Add Book</h1>
+      <button id="logout-btn">Logout</button>
+    </div>
+    <form id="book-form">
             <div class="title">
                 <label for="title">Title</label>
                 <input type="text" id="title" class="u-full-width">
