@@ -1,3 +1,4 @@
+// [deprecated] This frontend-only script has been replaced by public/books.js and backend APIs.
 //using ES6 classes
 //book class
 class Book{

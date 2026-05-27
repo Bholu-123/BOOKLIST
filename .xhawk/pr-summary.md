@@ -1,0 +1,5 @@
+- Introduced Node/Express server with MongoDB (Mongoose) and JWT auth; added signup/login routes
+- Added protected /api/books endpoints to list and create user-scoped books
+- Served static frontend from /public and refactored UI to call backend via fetch with token
+- Added login and signup pages and client-side scripts for auth token handling
+- Deprecated old FE-only app.js and moved styles to /public; added .env.example and npm scripts

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="/style.css" />
+  <title>Book List</title>
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <div>
+        <a href="/">Home</a>
+      </div>
+      <div id="auth-links">
+        <a href="/login.html" id="login-link">Login</a>
+        <a href="/signup.html" id="signup-link">Sign up</a>
+        <button id="logout-btn" style="display:none;">Logout</button>
+      </div>
+    </nav>
+
+    <h1>Add Book</h1>
+    <div id="error"></div>
+    <form id="book-form">
+      <div class="title">
+        <label for="title">Title</label>
+        <input type="text" id="title" class="u-full-width" required />
+        <span class="titleAlert"></span>
+      </div>
+      <div class="author">
+        <label for="author">Author</label>
+        <input type="text" id="author" class="u-full-width" required />
+        <span class="authorAlert"></span>
+      </div>
+      <div class="isbn">
+        <label for="isbn">ISBN#</label>
+        <input type="text" id="isbn" class="u-full-width" required />
+        <span class="isbnAlert"></span>
+      </div>
+      <div>
+        <input type="submit" value="Submit" class="u-full-width" />
+      </div>
+    </form>
+
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Author</th>
+          <th>ISBN</th>
+        </tr>
+      </thead>
+      <tbody id="book-list">
+        <!-- populated by JS -->
+      </tbody>
+    </table>
+  </div>
+  <script src="/books.js"></script>
+</body>
+</html>
